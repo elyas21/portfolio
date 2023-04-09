@@ -81,6 +81,7 @@ const formRef = useRef<HTMLInputElement | null>(null);
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>Phone N. <pre className="inline">+251962659105</pre></p>
 
         <form
           // ref={formRef}
