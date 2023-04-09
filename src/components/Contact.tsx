@@ -8,7 +8,9 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils";
 
 const Contact = () => {
-  const formRef = useRef();
+  const ref = useRef<SVGSVGElement>(null)
+const formRef = useRef<HTMLInputElement | null>(null); 
+  // const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -81,7 +83,7 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          ref={formRef}
+          // ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
