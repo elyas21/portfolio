@@ -19,9 +19,9 @@ import {
     xokaItsolution,
     freelancing,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    addOneStop,
+    kihlotacadamy,
+    fhc,
     threejs,
   } from "../assets";
   
@@ -171,7 +171,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: kihlotacadamy,
       source_code_link: "",
     },
     {
@@ -192,7 +192,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: fhc,
       source_code_link: "https://github.com/",
     },
     {
@@ -213,7 +213,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: addOneStop,
       source_code_link: "https://github.com/",
     },
   ];
