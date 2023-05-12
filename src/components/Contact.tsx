@@ -42,6 +42,7 @@ const formRef = useRef<HTMLInputElement | null>(null);
           to_name: "Elyas Abate",
           from_email: form.email,
           to_email: "elyasabate21@gmail.com",
+          reply_to: "elyasabate41@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
