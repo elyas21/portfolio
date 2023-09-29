@@ -19,7 +19,7 @@ const ProjectCard = ({
   source_code_link,
 }:any) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div className="flex-grow w-full" variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
