@@ -149,6 +149,14 @@ import {
       designation: "CFO",
       company: "xoka it",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
+    },
+    {
+      testimonial:
+        "Exceptional web developer who consistently delivers high-quality, user-centric websites, seamlessly combining cutting-edge technology.",
+      name: "Roble Dereje",
+      designation: "PM",
+      company: "Info Tech",
+      image: "https://randomuser.me/api/portraits/men/4.jpg",
     }
   ];
   
