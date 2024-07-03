@@ -25,6 +25,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import xokaItsolution from "./company/xokaItsolution.png";
 import freelancing from "./company/freelancing.png";
+import htu from "./company/htu.png";
 
 import addOneStop from "./works/img.png";
 import kihlotacadamy from "./works/kihlotacadamy.png";
@@ -58,5 +59,6 @@ export {
   freelancing,
   addOneStop,
   kihlotacadamy,
-  fhc
+  fhc,
+  htu
 };

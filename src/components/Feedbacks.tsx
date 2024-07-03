@@ -46,7 +46,7 @@ const FeedbackCard = ({
 const Feedbacks = () => {
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div
+      {/* <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant(0)}>
@@ -58,7 +58,7 @@ const Feedbacks = () => {
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
