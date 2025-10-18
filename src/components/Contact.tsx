@@ -74,7 +74,6 @@ const formRef = useRef<HTMLInputElement | null>(null);
       
       <motion.div className="h-16 w-full flex flex-col text-center justify-center">
         <p className="text-lg">By Elyas Abate.</p>
-        <p className="text-xs">Original design by Adrian Hajdin</p>
       </motion.div>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
