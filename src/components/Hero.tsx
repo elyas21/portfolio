@@ -38,7 +38,7 @@ const Hero = () => {
             LinkedIn
           </a>
           <span className="hidden sm:inline">•</span>
-          <a href="tel:+251962659105" className="hover:text-white transition">
+          <a href="tel:+251985258676" className="hover:text-white transition">
             +251 96 265 9105
           </a>
         </div>
