@@ -1,62 +1,32 @@
-import React from "react";
-import {Tilt} from "react-tilt";
-import { motion } from "framer-motion";
-
-import { styles } from "../style";
-import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils";
-
-const ServiceCard = ({ index, title, icon }:any) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
-
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant(3)}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+    <section id="about" className="max-w-5xl mx-auto px-6 py-20">
+      <div className="mb-12">
+        <h2 className="text-white text-4xl md:text-5xl font-bold mb-6">About Me</h2>
       </div>
-    </>
+
+      <div className="space-y-4 text-secondary text-lg leading-relaxed">
+        <p>
+          I started building enterprise systems—ERP platforms, learning management systems, and web applications 
+          serving thousands of users. Working with Angular, React, and Node.js taught me how to architect production-ready software.
+        </p>
+        
+        <p>
+          Everything changed with my first computer vision project. Watching models learn from data felt different—more 
+          exploratory, more research-driven. I realized I wanted to make systems intelligent, not just functional.
+        </p>
+        
+        <p>
+          Now pursuing my MSc in AI at Addis Ababa University, I work with TensorFlow, PyTorch, and OpenCV 
+          to build models for Computer Vision and NLP. My engineering background helps me bridge research and production.
+        </p>
+
+        <p className="text-white font-semibold">
+          Passionate about applying AI to healthcare, education, and automation.
+        </p>
+      </div>
+    </section>
   );
 };
 
-export default SectionWrapper(About, 'about');
+export default About;

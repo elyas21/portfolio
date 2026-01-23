@@ -32,8 +32,12 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "github",
+    title: "GitHub",
   },
   {
     id: "contact",
@@ -41,202 +45,222 @@ export const navLinks = [
   },
 ];
 
-const services: Array<any> = [
+const fullStackProjects = [
   {
-    title: "Web Developer",
-    icon: web,
+    name: "FHC ERP System",
+    description: "Enterprise Resource Planning system for Ethiopian Federal Housing Corporation. Comprehensive solution handling operations, finance, and resource management.",
+    tags: ["Angular", "Node.js", "SQL Server", "ASP.NET"],
+    link: "https://fhc.gov.et/",
+    image: fhc,
   },
   {
-    title: "Angular & React Developer",
-    icon: mobile,
+    name: "HTU Learning Management System",
+    description: "Full-fledged university LMS with real-time features, exam management, payment integration, and comprehensive student/faculty portal.",
+    tags: ["Next.js", "React", "Node.js", "PostgreSQL"],
+    link: "https://online.htu.edu.et/",
+    image: addOneStop,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    name: "HTU Mobile App LMS",
+    description: "Mobile-first learning management application for Holy Trinity University with offline capabilities and real-time sync.",
+    tags: ["React", "Node.js", "PostgreSQL", "PWA"],
+    link: "https://app.htu.edu.et/",
+    image: kihlotacadamy,
   },
   {
-    title: "Computer vision enginner",
-    icon: creator,
+    name: "Kihlot Academy",
+    description: "Mobile-first educational platform with video streaming, PDF reading, and interactive quizzes for students.",
+    tags: ["Angular", "MySQL", "Tailwind"],
+    link: "https://kihlotacademy.com/",
+    image: kihlotacadamy,
+  },
+  {
+    name: "Water & Energy Ministry Data System",
+    description: "Data management system for Federal Water and Energy Ministry handling resource tracking and analytics.",
+    tags: ["React", "Node.js", "PostgreSQL"],
+    link: "#",
+    image: addOneStop,
   },
 ];
 
-const technologies = [
+const mlProjects = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Real-time Face Mask Detection",
+    description: "ML-powered real-time face mask monitoring system using computer vision and IoT. Deployed TensorFlow models for accurate detection with live camera feeds at KIOT campus gate.",
+    tags: ["TensorFlow", "OpenCV", "Python", "IoT"],
+    link: "https://github.com/elyas21/face-mask-monitoring-at-kiot-campus-gate",
+    image: kihlotacadamy,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Face Recognition System",
+    description: "Python-based face recognition pipeline using OpenCV and deep learning models for face detection and identity matching.",
+    tags: ["Python", "OpenCV", "Deep Learning"],
+    link: "https://github.com/elyas21/face-recognition",
+    image: fhc,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Emotion Detection from Video",
+    description: "Dataset and code for extracting and organizing emotion labels from video clips for affect recognition research.",
+    tags: ["Python", "Computer Vision", "Dataset"],
+    link: "https://github.com/elyas21/emotion-detection-dataset-from-video",
+    image: addOneStop,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "News Article Classifier",
+    description: "Multi-class text classification model that assigns news articles to multiple categories using NLP and deep learning.",
+    tags: ["NLP", "TensorFlow", "Python"],
+    link: "https://github.com/elyas21/news-article-multiclass-classifier",
+    image: kihlotacadamy,
   },
   {
-    name: "angular",
-    icon: angular,
+    name: "YOLOv4 DeepSort Tracking",
+    description: "Object tracking implemented with YOLOv4 and DeepSort for multi-object tracking in video streams.",
+    tags: ["YOLO", "DeepSort", "TensorFlow"],
+    link: "https://github.com/elyas21/yolov4-deepsort",
+    image: fhc,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "Liver Disease Prediction",
+    description: "ML classification model for predicting liver disease status from clinical data using various classifiers.",
+    tags: ["Machine Learning", "Classification", "Healthcare"],
+    link: "https://github.com/elyas21/Liver-disease-prediction",
+    image: addOneStop,
   },
 ];
+
+const algorithmProjects = [
+  {
+    name: "Reinforcement Learning Grid World",
+    description: "RL agents trained on grid-world environment to learn navigation policies via value-based and policy-based methods.",
+    tags: ["Reinforcement Learning", "Python"],
+    link: "https://github.com/elyas21/reinforcement-learning-grid-world",
+  },
+  {
+    name: "Exploration-Exploitation Algorithms",
+    description: "Implementation of exploration-exploitation strategies in reinforcement learning, testing bandit-style and RL policies.",
+    tags: ["RL", "Algorithms", "Python"],
+    link: "https://github.com/elyas21/exploration_exploitation_algorithms",
+  },
+  {
+    name: "Robot Navigation Ethiopia BFS",
+    description: "Robot navigation using breadth-first search algorithm on Ethiopian map locations and grid cells.",
+    tags: ["BFS", "Path Planning", "Python"],
+    link: "https://github.com/elyas21/robot-nav-ethiopia-bfs",
+  },
+  {
+    name: "Uninformed Search Algorithms",
+    description: "Implementation of BFS, DFS, and other uninformed search algorithms for graph and grid problems.",
+    tags: ["Algorithms", "Search", "Python"],
+    link: "https://github.com/elyas21/Uninformed-search",
+  },
+  {
+    name: "Adversarial Search",
+    description: "Classical AI adversarial search algorithms including minimax and alpha-beta pruning for game playing.",
+    tags: ["AI", "Game Theory", "Python"],
+    link: "https://github.com/elyas21/Deterministic-Adversarial-Search",
+  },
+  {
+    name: "MapReduce Hadoop",
+    description: "Java implementation of MapReduce jobs on Hadoop demonstrating distributed processing patterns.",
+    tags: ["Hadoop", "MapReduce", "Java"],
+    link: "https://github.com/elyas21/map-reduce-hadoop",
+  },
+];
+
+const webProjects = [
+  {
+    name: "Portfolio Website",
+    description: "Personal portfolio built with TypeScript showcasing projects, skills, and experience.",
+    tags: ["TypeScript", "React", "Tailwind"],
+    link: "https://github.com/elyas21/portfolio",
+  },
+  {
+    name: "Paper Search RAG",
+    description: "Research paper search application using retrieval-augmented generation for academic literature lookup.",
+    tags: ["RAG", "NLP", "Web"],
+    link: "https://github.com/elyas21/paper-search-rag",
+  },
+  {
+    name: "Angular Inventory System",
+    description: "Inventory management frontend to track products, stock, and basic CRUD operations.",
+    tags: ["Angular", "TypeScript"],
+    link: "https://github.com/elyas21/angular-inventory",
+  },
+  {
+    name: "Angular State Management",
+    description: "Angular project showcasing state management patterns using NGXS and reactive programming.",
+    tags: ["Angular", "NGXS", "RxJS"],
+    link: "https://github.com/elyas21/angular-state-management",
+  },
+  {
+    name: "JavaFX E-commerce",
+    description: "JavaFX-based e-commerce GUI with product listing, cart, and checkout functionality.",
+    tags: ["JavaFX", "Java", "Desktop"],
+    link: "https://github.com/elyas21/javafx-ecommerce",
+  },
+];
+
+const technologies = {
+  fullstack: [
+    { name: "TypeScript", icon: typescript },
+    { name: "JavaScript", icon: javascript },
+    { name: "React", icon: reactjs },
+    { name: "Angular", icon: angular },
+    { name: "Node.js", icon: nodejs },
+    { name: "Tailwind", icon: tailwind },
+    { name: "MongoDB", icon: mongodb },
+    { name: "Git", icon: git },
+    { name: "Docker", icon: docker },
+  ],
+  ml: [
+    { name: "Python", icon: javascript },
+    { name: "TensorFlow", icon: reactjs },
+    { name: "PyTorch", icon: nodejs },
+    { name: "OpenCV", icon: docker },
+    { name: "NumPy", icon: mongodb },
+    { name: "Pandas", icon: git },
+  ]
+};
 
 const experiences = [
   {
-    title: "Full stack  Developer",
-    company_name: "Xoka It Solution",
+    title: "Full Stack Developer",
+    company_name: "XOKA IT Solution",
     icon: xokaItsolution,
     iconBg: "#383E56",
-    date: "Jun 2022 - March 2023",
+    date: "June 2022 - April 2023",
     points: [
-      "Developing and maintaining web applications using Angular and React , NodeJS, Asp.net core other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Also  worked on Microsoft SQL databases from design to implementation. developing database   procedure, function and triggers are my expertise.",
-      "Also I work on windows service and web service making the system real time.",
+      "Full stack development using Angular, NodeJS, ASP.NET and SQL Server.",
+      "Designed and implemented Microsoft SQL databases including procedures, functions and triggers.",
+      "Developed Windows services and web services for real-time system operations.",
+      "Collaborated with cross-functional teams to deliver high-quality ERP solutions.",
     ],
   },
   {
-    title: "Freelancing",
-    icon: freelancing,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using Angular , React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-    ],
-  },
-  {
-    title: "Senior Full stack Developer",
+    title: "Senior Full Stack Developer",
     company_name: "Holy Trinity University",
     icon: htu,
     iconBg: "#fefefe",
-    date: "2023 - Present",
+    date: "April 2022 - Present",
     points: [
-      "As a Senior Full-Stack Developer, I spearheaded the development of a comprehensive online education system for Holly Trinity University (http://www.htu.edu.ph/).",
-      "This project leveraged my full-stack expertise to create a user-friendly and scalable platform that caters to students' needs.",
-      "My contributions ensured a seamless learning experience by developing robust features and functionalities for online learning, exams, payment integration, and various functionalities to facilitate the online learning process.",
+      "Lead a team to develop a comprehensive Learning Management System using Next.js, React, Node.js, and PostgreSQL.",
+      "Architected and deployed scalable solutions for online learning, exams, and payment integration.",
+      "Implemented real-time features and ensured seamless user experience for students and faculty.",
+      "Managed full development lifecycle from design to deployment.",
+    ],
+  },
+  {
+    title: "Freelance AI/ML & Full Stack Developer",
+    icon: freelancing,
+    iconBg: "#E6DEDD",
+    date: "April 2023 - Present",
+    points: [
+      "Developing AI/ML solutions focusing on Computer Vision and NLP applications.",
+      "Building full-stack web applications using React, Next.js, Node.js, and Python.",
+      "Implementing machine learning models using TensorFlow, PyTorch, and OpenCV.",
+      "Delivering end-to-end solutions from data preprocessing to model deployment on GCP and Firebase.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Elyas proved me wrong.",
-    name: "",
-    designation: "CFO",
-    company: "xoka it",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "Exceptional web developer who consistently delivers high-quality, user-centric websites, seamlessly combining cutting-edge technology.",
-    name: "Roble Dereje",
-    designation: "PM",
-    company: "Info Tech",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
-  },
-];
-
-const projects = [
-  {
-    name: "kihlotacademy",
-    description:
-      "Web-based platform that allows users to watch video, read pdf and answer questions on various topics, providing a convenient and mobile first design to the users.",
-    tags: [
-      {
-        name: "angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: kihlotacadamy,
-    source_code_link: "",
-  },
-  {
-    name: "ERP syste for FHC",
-    description:
-      "ERP system for Ethiopian federal housing corporation i’m part of a team for developing this fully fledged  ERP system. I develop full stack web application from design to deployment",
-    tags: [
-      {
-        name: "Angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "NodeJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: fhc,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Addis One Stop",
-    description:
-      "A comprehensive city administration system for Addis abeba, and offers curated feel for popular users of the system.",
-    tags: [
-      {
-        name: "reactJs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: addOneStop,
-    source_code_link: "https://github.com/",
-  },
-];
-
-export { services, technologies, experiences, testimonials, projects };
+export { fullStackProjects, mlProjects, algorithmProjects, webProjects, technologies, experiences };
