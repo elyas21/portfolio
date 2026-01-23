@@ -8,8 +8,8 @@ const GitHubCard = ({ name, description, tags, link }: any) => (
     rel="noopener noreferrer"
     className='bg-tertiary p-5 rounded-xl hover:scale-105 transition-transform block'
   >
-    <h3 className='text-white font-bold text-lg mb-2'>{name}</h3>
-    <p className='text-secondary text-sm mb-3 leading-relaxed'>{description}</p>
+    <h3 className='text-white font-bold text-lg mb-3'>{name}</h3>
+    <p className='text-secondary text-sm mb-4 leading-relaxed'>{description}</p>
     <div className='flex flex-wrap gap-2'>
       {tags.map((tag: string) => (
         <span key={tag} className='px-2 py-1 bg-black-100 text-secondary rounded text-xs'>

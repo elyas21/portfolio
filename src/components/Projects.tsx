@@ -2,12 +2,9 @@ import { useState } from "react";
 import { fullStackProjects, mlProjects } from "../constants";
 
 const ProjectCard = ({ name, description, tags, link, image }: any) => (
-  <div className='bg-tertiary p-5 rounded-xl hover:scale-105 transition-transform flex flex-col min-h-[400px]'>
-    <div className='relative w-full h-[180px] mb-4'>
-      <img src={image} alt={name} className='w-full h-full object-cover rounded-lg' />
-    </div>
-    <h3 className='text-white font-bold text-lg mb-2'>{name}</h3>
-    <p className='text-secondary text-sm mb-3 leading-relaxed flex-grow'>{description}</p>
+  <div className='bg-tertiary p-5 rounded-xl hover:scale-105 transition-transform flex flex-col min-h-[300px]'>
+    <h3 className='text-white font-bold text-lg mb-3'>{name}</h3>
+    <p className='text-secondary text-sm mb-4 leading-relaxed flex-grow'>{description}</p>
     <div className='flex flex-wrap gap-2 mb-3'>
       {tags.slice(0, 3).map((tag: string) => (
         <span key={tag} className='px-2 py-1 bg-black-100 text-secondary rounded text-xs'>
