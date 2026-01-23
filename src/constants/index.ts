@@ -264,3 +264,8 @@ const experiences = [
 ];
 
 export { fullStackProjects, mlProjects, algorithmProjects, webProjects, technologies, experiences };
+
+// Legacy exports
+export const testimonials: any[] = [];
+export const projects: any[] = [];
+export const services: any[] = [];
