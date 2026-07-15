@@ -1,52 +1,36 @@
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: ["./src/**/*.{js,jsx}"],
-//   mode: "jit",
-//   theme: {
-//     extend: {
-//       colors: {
-//         primary: "#050816",
-//         secondary: "#aaa6c3",
-//         tertiary: "#151030",
-//         "black-100": "#100d25",
-//         "black-200": "#090325",
-//         "white-100": "#f3f3f3",
-//       },
-//       boxShadow: {
-//         card: "0px 35px 120px -15px #211e35",
-//       },
-//       screens: {
-//         xs: "450px",
-//       },
-//       backgroundImage: {
-//         "hero-pattern": "url('/src/assets/herobg.png')",
-//       },
-//     },
-//   },
-//   plugins: [],
-// };
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        primary: "#0a0e27",
-        secondary: "#94a3b8",
-        tertiary: "#1e293b",
-        "black-100": "#0f172a",
-        "black-200": "#020617",
-        "white-100": "#f1f5f9",
+        // semantic tokens backed by CSS variables
+        surface:    "var(--color-surface)",
+        "surface-2":"var(--color-surface-2)",
+        "surface-3":"var(--color-surface-3)",
+        ink:        "var(--color-ink)",
+        "ink-2":    "var(--color-ink-2)",
+        "ink-3":    "var(--color-ink-3)",
+        border:     "var(--color-border)",
+        accent:     "var(--color-accent)",
+        "accent-2": "var(--color-accent-2)",
+        // keep legacy names mapped to variables so existing classes still work
+        primary:    "var(--color-surface)",
+        secondary:  "var(--color-ink-2)",
+        tertiary:   "var(--color-surface-3)",
+        "black-100":"var(--color-surface-2)",
+        "black-200":"var(--color-surface)",
+        "white-100":"var(--color-ink)",
+      },
+      fontFamily: {
+        sans: ["Inter", "Poppins", "sans-serif"],
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #211e35",
+        card: "0 4px 32px 0 rgba(99,102,241,0.10)",
+        "card-light": "0 4px 32px 0 rgba(99,102,241,0.08)",
       },
-      screens: {
-        xs: "450px",
-      },
-      backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
-      },
+      screens: { xs: "450px" },
     },
   },
   plugins: [],

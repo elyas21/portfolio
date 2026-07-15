@@ -3,7 +3,8 @@ import Navbar from './Navbar';
 import About from './About';
 import Projects from './Projects';
 import GitHub from './GitHub';
-import Skills from './Skills';
+import Tech from './Tech';
+import Journey from './Journey';
 import Contact from './Contact';
 
 export {
@@ -12,6 +13,7 @@ export {
   About,
   Projects,
   GitHub,
-  Skills,
+  Tech,
+  Journey,
   Contact,
 }

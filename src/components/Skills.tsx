@@ -44,22 +44,25 @@ const Skills = () => {
         <div className="bg-tertiary p-6 rounded-xl text-center">
           <div className="text-4xl mb-2">🎓</div>
           <h4 className="text-white font-bold mb-2">Education</h4>
-          <p className="text-secondary text-sm">MSc in AI - Addis Ababa University</p>
-          <p className="text-secondary text-sm">BSc in Software Engineering</p>
+          <p className="text-secondary text-sm">MSc in AI — Addis Ababa University</p>
+          <p className="text-secondary text-sm">BSc Software Eng. — Magna Cum Laude</p>
+          <p className="text-secondary text-sm">BA Management — Rada College</p>
         </div>
 
         <div className="bg-tertiary p-6 rounded-xl text-center">
           <div className="text-4xl mb-2">🏆</div>
-          <h4 className="text-white font-bold mb-2">Certifications</h4>
-          <p className="text-secondary text-sm">Custom Training with TensorFlow</p>
-          <p className="text-secondary text-sm">Custom Models & Loss Functions</p>
+          <h4 className="text-white font-bold mb-2">Highlights</h4>
+          <p className="text-secondary text-sm">Credit Risk & Fraud Detection @ CBE</p>
+          <p className="text-secondary text-sm">RAG Bots & LLMOps in Production</p>
+          <p className="text-secondary text-sm">40% Query Perf. Gain @ HTU LMS</p>
         </div>
 
         <div className="bg-tertiary p-6 rounded-xl text-center">
           <div className="text-4xl mb-2">💼</div>
           <h4 className="text-white font-bold mb-2">Experience</h4>
-          <p className="text-secondary text-sm">3+ Years Full Stack</p>
-          <p className="text-secondary text-sm">1+ Year AI/ML Research</p>
+          <p className="text-secondary text-sm">5+ Years Full Stack</p>
+          <p className="text-secondary text-sm">3+ Years Production ML/MLOps</p>
+          <p className="text-secondary text-sm">Founder — 3 SaaS Products</p>
         </div>
       </div>
     </section>

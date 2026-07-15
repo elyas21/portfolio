@@ -1,78 +1,106 @@
-const Journey = () => {
-  return (
-    <section id="journey" className="max-w-5xl mx-auto px-6 py-20">
-      <div className="mb-16 text-center">
-        <h2 className="text-white text-5xl font-bold mb-4">My Journey</h2>
-        <p className="text-secondary text-lg">From building enterprise systems to researching AI</p>
+const steps = [
+  {
+    num: "01",
+    title: "Full Stack Developer",
+    company: "Xoka IT Solution",
+    date: "Dec 2021 – Sep 2023",
+    body: "Built enterprise Angular frontends for government ERP systems and geospatial mineral tracking UIs. Designed MS SQL Server architectures with 50+ stored procedures, cutting critical operation latency from 3s to 500ms.",
+    tags: ["Angular", "Node.js", "ASP.NET", "MS SQL Server", "Leaflet"],
+    accentColor: "#6366f1",
+  },
+  {
+    num: "02",
+    title: "Senior Full Stack & ML Engineer",
+    company: "Holy Trinity University",
+    date: "Dec 2023 – Nov 2025",
+    body: "Led end-to-end ML lifecycle for a personalized learning-aid system. Deployed a multimodal NLP chat system (text + audio). Architected Node.js LMS backends with PostgreSQL optimization delivering 40% query performance improvement.",
+    tags: ["Next.js", "React", "Node.js", "PostgreSQL", "NLP", "WebSockets"],
+    accentColor: "#8b5cf6",
+  },
+  {
+    num: "03",
+    title: "Founder & Lead Engineer",
+    company: "Million Technologies (M-TECHS)",
+    date: "Jun 2021 – Present",
+    body: "Directed end-to-end product development for three enterprise SaaS products: UniFlow SIS, Afrifidel LearnLang, and Grar Books — with ML-powered predictive analytics, automated evaluations, and intelligent recommendations.",
+    tags: ["Next.js", "Tailwind", "Node.js", "ML", "SaaS"],
+    accentColor: "#f59e0b",
+  },
+  {
+    num: "04",
+    title: "Machine Learning Engineer",
+    company: "Commercial Bank of Ethiopia",
+    date: "Jan 2026 – Present",
+    body: "XGBoost/LightGBM credit risk models with SHAP explainability, Vision Transformer KYC pipelines, real-time fraud detection with Agentic workflows, and LLMOps infrastructure with RAG bots and Vision-Language Models.",
+    tags: ["XGBoost", "LightGBM", "RAG", "LLMOps", "MLOps", "VLM", "Python"],
+    accentColor: "#10b981",
+  },
+];
+
+const Journey = () => (
+  <section
+    id="journey"
+    className="py-24"
+    style={{ background: "var(--color-surface-2)" }}
+  >
+    <div className="max-w-5xl mx-auto px-6">
+      <div className="mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold mb-3" style={{ color: "var(--color-ink)" }}>
+          Experience
+        </h2>
+        <p className="text-base" style={{ color: "var(--color-ink-2)" }}>
+          5+ years from enterprise systems to production AI
+        </p>
       </div>
 
-      <div className="space-y-12">
-        <div className="bg-black-100 p-8 rounded-2xl border-l-4 border-blue-500">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">1</div>
-            <div>
-              <h3 className="text-white text-2xl font-bold">Full Stack Engineer</h3>
-              <p className="text-secondary">2022 - 2023</p>
+      <div className="space-y-6">
+        {steps.map((step) => (
+          <div
+            key={step.num}
+            className="rounded-2xl p-8"
+            style={{
+              background: "var(--color-surface)",
+              border: "1px solid var(--color-border)",
+              borderLeft: `3px solid ${step.accentColor}`,
+            }}
+          >
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-widest mr-3" style={{ color: step.accentColor }}>
+                  {step.num}
+                </span>
+                <span className="text-lg font-bold" style={{ color: "var(--color-ink)" }}>
+                  {step.title}
+                </span>
+                <span className="text-sm ml-2" style={{ color: "var(--color-ink-2)" }}>
+                  · {step.company}
+                </span>
+              </div>
+              <span className="text-xs font-medium flex-shrink-0" style={{ color: "var(--color-ink-3)" }}>
+                {step.date}
+              </span>
             </div>
-          </div>
-          <p className="text-white-100 leading-relaxed mb-4">
-            Started my career building enterprise-grade ERP systems and learning management platforms. 
-            Worked with Angular, React, Node.js, and SQL Server to deliver scalable solutions for government agencies and universities.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">Angular</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">React</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">Node.js</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">PostgreSQL</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">SQL Server</span>
-          </div>
-        </div>
 
-        <div className="bg-black-100 p-8 rounded-2xl border-l-4 border-purple-500">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl">2</div>
-            <div>
-              <h3 className="text-white text-2xl font-bold">The Transition</h3>
-              <p className="text-secondary">2023</p>
-            </div>
-          </div>
-          <p className="text-white-100 leading-relaxed mb-4">
-            Discovered my passion for AI/ML while building a real-time face mask detection system. 
-            The intersection of software engineering and machine learning fascinated me. 
-            Decided to pursue MSc in Artificial Intelligence at Addis Ababa University to deepen my expertise.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">Computer Vision</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">TensorFlow</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">OpenCV</span>
-          </div>
-        </div>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: "var(--color-ink-2)" }}>
+              {step.body}
+            </p>
 
-        <div className="bg-black-100 p-8 rounded-2xl border-l-4 border-green-500">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xl">3</div>
-            <div>
-              <h3 className="text-white text-2xl font-bold">AI/ML Engineer & Researcher</h3>
-              <p className="text-secondary">2023 - Present</p>
+            <div className="flex flex-wrap gap-2">
+              {step.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="px-3 py-1 rounded-full text-xs font-medium"
+                  style={{ background: "var(--color-surface-3)", color: "var(--color-ink-2)", border: "1px solid var(--color-border)" }}
+                >
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
-          <p className="text-white-100 leading-relaxed mb-4">
-            Now combining full-stack expertise with AI/ML research. 
-            Developing intelligent systems using TensorFlow, PyTorch, and modern NLP techniques. 
-            Freelancing on AI projects while pursuing advanced research in Computer Vision and Natural Language Processing.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">TensorFlow</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">PyTorch</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">NLP</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">Computer Vision</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">Python</span>
-            <span className="px-3 py-1 bg-tertiary text-secondary rounded-full text-sm">GCP</span>
-          </div>
-        </div>
+        ))}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Journey;

@@ -1,32 +1,30 @@
-const About = () => {
-  return (
-    <section id="about" className="max-w-5xl mx-auto px-6 py-20">
-      <div className="mb-12">
-        <h2 className="text-white text-4xl md:text-5xl font-bold mb-6">About Me</h2>
-      </div>
-
-      <div className="space-y-4 text-secondary text-lg leading-relaxed">
-        <p>
-          I started building enterprise systems—ERP platforms, learning management systems, and web applications 
-          serving thousands of users. Working with Angular, React, and Node.js taught me how to architect production-ready software.
-        </p>
-        
-        <p>
-          Everything changed with my first computer vision project. Watching models learn from data felt different—more 
-          exploratory, more research-driven. I realized I wanted to make systems intelligent, not just functional.
-        </p>
-        
-        <p>
-          Now pursuing my MSc in AI at Addis Ababa University, I work with TensorFlow, PyTorch, and OpenCV 
-          to build models for Computer Vision and NLP. My engineering background helps me bridge research and production.
-        </p>
-
-        <p className="text-white font-semibold">
-          Passionate about applying AI to healthcare, education, and automation.
-        </p>
-      </div>
-    </section>
-  );
-};
+const About = () => (
+  <section id="about" className="max-w-5xl mx-auto px-6 py-24">
+    <h2 className="text-4xl md:text-5xl font-bold mb-10" style={{ color: "var(--color-ink)" }}>
+      About Me
+    </h2>
+    <div className="space-y-5 text-base md:text-lg leading-relaxed" style={{ color: "var(--color-ink-2)" }}>
+      <p>
+        Over 5 years I've built production systems at scale — from government ERP platforms and university LMS backends
+        handling thousands of concurrent users, to real-time fraud detection pipelines processing high-throughput
+        transaction streams at the Commercial Bank of Ethiopia.
+      </p>
+      <p>
+        My edge is the full stack: I architect the Node.js/PostgreSQL backend, own the React/Next.js frontend,
+        and ship the ML model — XGBoost credit risk scoring, RAG customer support bots, Vision Transformer KYC pipelines —
+        all the way to production with proper MLOps, feature stores, and drift monitoring.
+      </p>
+      <p>
+        As founder of Million Technologies (M-TECHS) I've taken three SaaS products from zero to live:
+        UniFlow SIS, Afrifidel LearnLang, and Grar Books — each combining complex role-based workflows
+        with intelligent ML-powered recommendations and analytics.
+      </p>
+      <p className="font-semibold" style={{ color: "var(--color-ink)" }}>
+        Currently pursuing MSc in AI at Addis Ababa University while leading ML engineering at CBE.
+        Magna cum laude BSc in Software Engineering from Wollo University.
+      </p>
+    </div>
+  </section>
+);
 
 export default About;
