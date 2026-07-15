@@ -37,9 +37,8 @@ const Contact = () => {
         alert("Thank you! I will get back to you soon.");
         setForm({ name: "", email: "", message: "" });
       })
-      .catch((error) => {
+      .catch(() => {
         setLoading(false);
-        console.error(error);
         alert("Something went wrong. Please try again.");
       });
   };

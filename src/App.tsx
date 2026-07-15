@@ -16,7 +16,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className={`relative z-0 ${isDark ? "" : "light"}`} style={{ backgroundColor: "var(--color-surface)", minHeight: "100vh" }}>
+      <div className={`relative z-0 ${isDark ? "" : "light"}`}>
         <Navbar isDark={isDark} toggleTheme={toggleTheme} />
         <Hero />
         <About />

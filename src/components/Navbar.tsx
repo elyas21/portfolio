@@ -14,7 +14,7 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
     <nav
       className="w-full flex items-center py-4 fixed top-0 z-20 backdrop-blur-md"
       style={{
-        backgroundColor: "color-mix(in srgb, var(--color-surface) 85%, transparent)",
+        backgroundColor: "var(--color-surface)",
         borderBottom: "1px solid var(--color-border)",
       }}
     >
@@ -88,7 +88,7 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
             src={toggle ? close : menu}
             alt="menu"
             className="w-6 h-6 cursor-pointer"
-            style={{ filter: "var(--color-ink)" === "#0d0f1a" ? "invert(1)" : "none" }}
+            style={{ filter: isDark ? "invert(1)" : "none" }}
             onClick={() => setToggle(!toggle)}
           />
         </div>
